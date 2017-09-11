@@ -55,8 +55,8 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="238" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="fee" pref="287" max="32767" attributes="0"/>
-                              <Component id="MID" max="32767" attributes="0"/>
+                              <Component id="feebox" pref="287" max="32767" attributes="0"/>
+                              <Component id="idbox" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
@@ -70,8 +70,8 @@
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="name" min="-2" pref="287" max="-2" attributes="0"/>
-                              <Component id="jComboBox1" min="-2" pref="287" max="-2" attributes="0"/>
+                              <Component id="moviebox" min="-2" pref="287" max="-2" attributes="0"/>
+                              <Component id="typebox" min="-2" pref="287" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -92,22 +92,22 @@
                   <EmptySpace pref="78" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jLabel1" alignment="1" min="-2" pref="36" max="-2" attributes="0"/>
-                      <Component id="name" alignment="1" min="-2" pref="37" max="-2" attributes="0"/>
+                      <Component id="moviebox" alignment="1" min="-2" pref="37" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel2" alignment="3" min="-2" pref="46" max="-2" attributes="0"/>
-                      <Component id="jComboBox1" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
+                      <Component id="typebox" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel3" alignment="3" min="-2" pref="53" max="-2" attributes="0"/>
-                      <Component id="fee" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                      <Component id="feebox" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jLabel4" min="-2" pref="48" max="-2" attributes="0"/>
-                      <Component id="MID" min="-2" pref="35" max="-2" attributes="0"/>
+                      <Component id="idbox" min="-2" pref="35" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
                   <Component id="jButton1" min="-2" pref="46" max="-2" attributes="0"/>
@@ -161,16 +161,16 @@
             <Property name="text" type="java.lang.String" value="Movie ID                         :"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="name">
+        <Component class="javax.swing.JTextField" name="moviebox">
         </Component>
-        <Component class="javax.swing.JTextField" name="MID">
+        <Component class="javax.swing.JTextField" name="idbox">
         </Component>
-        <Component class="javax.swing.JTextField" name="fee">
+        <Component class="javax.swing.JTextField" name="feebox">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="feeActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="feeboxActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JComboBox" name="jComboBox1">
+        <Component class="javax.swing.JComboBox" name="typebox">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="6">
@@ -194,6 +194,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Add"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+          </Events>
         </Component>
         <Container class="javax.swing.JPanel" name="jPanel2">
           <Properties>

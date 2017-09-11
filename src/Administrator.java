@@ -29,7 +29,7 @@ public class Administrator {
         this.AID = AID;
     }
     
-    public void adddetails (){
+    public void addbanddetails (){
     
     }
     
